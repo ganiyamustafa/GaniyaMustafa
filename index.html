@@ -1,0 +1,439 @@
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ganiya Mustafa - Backend Developer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+  <script>
+      tailwind.config = {
+          theme: {
+              extend: {
+                  fontFamily: {
+                      'inter': ['Inter', 'sans-serif'],
+                      'space': ['Space Grotesk', 'sans-serif']
+                  },
+                  colors: {
+                      'dark-bg': '#0a0a0f',
+                      'dark-card': '#1a1a2e',
+                      'dark-border': '#2a2a3e',
+                      'cyan-accent': '#00d4ff',
+                      'purple-accent': '#8b5cf6'
+                  }
+              }
+          }
+      }
+  </script>
+  <style>
+      .gradient-bg {
+          background: linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 50%, #16213e 100%);
+      }
+      .code-animation {
+          animation: float 6s ease-in-out infinite;
+      }
+      @keyframes float {
+          0%, 100% { transform: translateY(0px); }
+          50% { transform: translateY(-10px); }
+      }
+      .glow-hover:hover {
+          box-shadow: 0 0 20px rgba(0, 212, 255, 0.3);
+      }
+      .card-lift:hover {
+          transform: translateY(-5px);
+      }
+  </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.inset-0{inset:0px}.bottom-40{bottom:10rem}.left-10{left:2.5rem}.left-20{left:5rem}.right-20{right:5rem}.top-0{top:0px}.top-20{top:5rem}.top-40{top:10rem}.z-10{z-index:10}.z-50{z-index:50}.mx-auto{margin-left:auto;margin-right:auto}.mb-12{margin-bottom:3rem}.mb-16{margin-bottom:4rem}.mb-2{margin-bottom:0.5rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.mb-3{margin-bottom:0.75rem}.mb-4{margin-bottom:1rem}.mt-1{margin-top:0.25rem}.block{display:block}.flex{display:flex}.grid{display:grid}.hidden{display:none}.h-1{height:0.25rem}.h-16{height:4rem}.h-6{height:1.5rem}.h-12{height:3rem}.h-48{height:12rem}.h-5{height:1.25rem}.min-h-screen{min-height:100vh}.w-20{width:5rem}.w-6{width:1.5rem}.w-full{width:100%}.w-12{width:3rem}.w-5{width:1.25rem}.max-w-2xl{max-width:42rem}.max-w-4xl{max-width:56rem}.max-w-6xl{max-width:72rem}.resize-none{resize:none}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-12{gap:3rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.gap-6{gap:1.5rem}.gap-2{gap:0.5rem}.gap-8{gap:2rem}.space-x-8 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(2rem * var(--tw-space-x-reverse));margin-left:calc(2rem * calc(1 - var(--tw-space-x-reverse)))}.space-x-4 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(1rem * var(--tw-space-x-reverse));margin-left:calc(1rem * calc(1 - var(--tw-space-x-reverse)))}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.space-y-6 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.5rem * var(--tw-space-y-reverse))}.space-y-8 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(2rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(2rem * var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.overflow-x-hidden{overflow-x:hidden}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-xl{border-radius:0.75rem}.border{border-width:1px}.border-2{border-width:2px}.border-b{border-bottom-width:1px}.border-t{border-top-width:1px}.border-cyan-accent{--tw-border-opacity:1;border-color:rgb(0 212 255 / var(--tw-border-opacity, 1))}.border-dark-border{--tw-border-opacity:1;border-color:rgb(42 42 62 / var(--tw-border-opacity, 1))}.bg-cyan-accent{--tw-bg-opacity:1;background-color:rgb(0 212 255 / var(--tw-bg-opacity, 1))}.bg-dark-bg{--tw-bg-opacity:1;background-color:rgb(10 10 15 / var(--tw-bg-opacity, 1))}.bg-dark-bg\/80{background-color:rgb(10 10 15 / 0.8)}.bg-dark-card{--tw-bg-opacity:1;background-color:rgb(26 26 46 / var(--tw-bg-opacity, 1))}.bg-dark-card\/50{background-color:rgb(26 26 46 / 0.5)}.bg-dark-bg\/95{background-color:rgb(10 10 15 / 0.95)}.bg-gradient-to-b{background-image:linear-gradient(to bottom, var(--tw-gradient-stops))}.bg-gradient-to-br{background-image:linear-gradient(to bottom right, var(--tw-gradient-stops))}.from-cyan-accent\/20{--tw-gradient-from:rgb(0 212 255 / 0.2) var(--tw-gradient-from-position);--tw-gradient-to:rgb(0 212 255 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-dark-bg{--tw-gradient-from:#0a0a0f var(--tw-gradient-from-position);--tw-gradient-to:rgb(10 10 15 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-purple-accent\/20{--tw-gradient-from:rgb(139 92 246 / 0.2) var(--tw-gradient-from-position);--tw-gradient-to:rgb(139 92 246 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.to-cyan-accent\/20{--tw-gradient-to:rgb(0 212 255 / 0.2) var(--tw-gradient-to-position)}.to-dark-card\/20{--tw-gradient-to:rgb(26 26 46 / 0.2) var(--tw-gradient-to-position)}.to-purple-accent\/20{--tw-gradient-to:rgb(139 92 246 / 0.2) var(--tw-gradient-to-position)}.p-6{padding:1.5rem}.p-4{padding:1rem}.p-8{padding:2rem}.px-4{padding-left:1rem;padding-right:1rem}.px-8{padding-left:2rem;padding-right:2rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-20{padding-top:5rem;padding-bottom:5rem}.py-4{padding-top:1rem;padding-bottom:1rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-8{padding-top:2rem;padding-bottom:2rem}.text-center{text-align:center}.font-inter{font-family:Inter, sans-serif}.font-mono{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace}.font-space{font-family:Space Grotesk, sans-serif}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-bold{font-weight:700}.font-light{font-weight:300}.font-semibold{font-weight:600}.font-medium{font-weight:500}.leading-relaxed{line-height:1.625}.leading-tight{line-height:1.25}.text-cyan-accent{--tw-text-opacity:1;color:rgb(0 212 255 / var(--tw-text-opacity, 1))}.text-dark-bg{--tw-text-opacity:1;color:rgb(10 10 15 / var(--tw-text-opacity, 1))}.text-gray-300{--tw-text-opacity:1;color:rgb(209 213 219 / var(--tw-text-opacity, 1))}.text-gray-400{--tw-text-opacity:1;color:rgb(156 163 175 / var(--tw-text-opacity, 1))}.text-purple-accent{--tw-text-opacity:1;color:rgb(139 92 246 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.placeholder-gray-500::placeholder{--tw-placeholder-opacity:1;color:rgb(107 114 128 / var(--tw-placeholder-opacity, 1))}.opacity-10{opacity:0.1}.backdrop-blur-md{--tw-backdrop-blur:blur(12px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-300{transition-duration:300ms}.hover\:border-cyan-accent:hover{--tw-border-opacity:1;border-color:rgb(0 212 255 / var(--tw-border-opacity, 1))}.hover\:bg-cyan-accent:hover{--tw-bg-opacity:1;background-color:rgb(0 212 255 / var(--tw-bg-opacity, 1))}.hover\:bg-cyan-accent\/90:hover{background-color:rgb(0 212 255 / 0.9)}.hover\:text-cyan-accent:hover{--tw-text-opacity:1;color:rgb(0 212 255 / var(--tw-text-opacity, 1))}.hover\:text-dark-bg:hover{--tw-text-opacity:1;color:rgb(10 10 15 / var(--tw-text-opacity, 1))}.hover\:text-cyan-accent\/80:hover{color:rgb(0 212 255 / 0.8)}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.focus\:border-cyan-accent:focus{--tw-border-opacity:1;border-color:rgb(0 212 255 / var(--tw-border-opacity, 1))}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}@media (min-width: 640px){.sm\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.sm\:flex-row{flex-direction:row}.sm\:items-start{align-items:flex-start}.sm\:justify-between{justify-content:space-between}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\:text-2xl{font-size:1.5rem;line-height:2rem}.sm\:text-4xl{font-size:2.25rem;line-height:2.5rem}.sm\:text-5xl{font-size:3rem;line-height:1}}@media (min-width: 768px){.md\:mb-0{margin-bottom:0px}.md\:flex{display:flex}.md\:hidden{display:none}.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:flex-row{flex-direction:row}.md\:text-right{text-align:right}.md\:text-3xl{font-size:1.875rem;line-height:2.25rem}.md\:text-5xl{font-size:3rem;line-height:1}.md\:text-6xl{font-size:3.75rem;line-height:1}}@media (min-width: 1024px){.lg\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.lg\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.lg\:px-8{padding-left:2rem;padding-right:2rem}.lg\:text-7xl{font-size:4.5rem;line-height:1}}</style></head>
+<body class="font-inter bg-dark-bg text-white overflow-x-hidden">
+  <!-- Navigation -->
+  <nav class="fixed top-0 w-full z-50 bg-dark-bg/80 backdrop-blur-md border-b border-dark-border">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex justify-between items-center h-16">
+              <div class="font-space font-bold text-xl text-cyan-accent">GM</div>
+              <div class="hidden md:flex space-x-8">
+                  <a href="#about" class="text-gray-300 hover:text-cyan-accent transition-colors duration-300">About</a>
+                  <a href="#projects" class="text-gray-300 hover:text-cyan-accent transition-colors duration-300">Projects</a>
+                  <a href="#experience" class="text-gray-300 hover:text-cyan-accent transition-colors duration-300">Experience</a>
+                  <a href="#contact" class="text-gray-300 hover:text-cyan-accent transition-colors duration-300">Contact</a>
+              </div>
+              <div class="md:hidden">
+                  <button class="text-gray-300 hover:text-cyan-accent">
+                      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                      </svg>
+                  </button>
+              </div>
+          </div>
+      </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="gradient-bg min-h-screen flex items-center justify-center relative overflow-hidden">
+      <!-- Animated Background Elements -->
+      <!-- <div class="absolute inset-0 opacity-10">
+          <div class="code-animation absolute top-20 left-10 text-cyan-accent font-mono text-sm">const developer = { skills: ['Python', 'Go', 'Docker'] }</div>
+          <div class="code-animation absolute top-40 right-20 text-purple-accent font-mono text-sm" style="animation-delay: 2s;">async function buildAPI() { return success; }</div>
+          <div class="code-animation absolute bottom-40 left-20 text-cyan-accent font-mono text-sm" style="animation-delay: 4s;">SELECT * FROM innovations WHERE impact &gt; 0;</div>
+      </div> -->
+      
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
+          <h1 class="font-space font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-6 leading-tight">
+              <span class="text-white">Ganiya</span> <span class="text-cyan-accent">Mustafa</span>
+          </h1>
+          <p class="text-xl sm:text-2xl md:text-3xl text-gray-300 mb-8 font-light">
+              Backend Developer | API Architect
+          </p>
+          <p class="text-lg text-gray-400 mb-12 max-w-2xl mx-auto leading-relaxed">
+              Crafting scalable backend systems and robust APIs that power modern applications. Passionate about clean code, performance optimization
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+              <a href="#projects" class="bg-cyan-accent text-dark-bg px-8 py-4 rounded-lg font-semibold hover:bg-cyan-accent/90 transition-all duration-300 glow-hover">
+                  View Projects
+              </a>
+              <a href="#contact" class="border-2 border-cyan-accent text-cyan-accent px-8 py-4 rounded-lg font-semibold hover:bg-cyan-accent hover:text-dark-bg transition-all duration-300">
+                  Contact Me
+              </a>
+              <a href="https://drive.google.com/uc?export=download&id=1Cj9DZW52NTUf9UXXiwocM6N9nluyauS5" download="" class="bg-dark-card border-2 border-dark-border text-white px-8 py-4 rounded-lg font-semibold hover:border-cyan-accent hover:text-cyan-accent transition-all duration-300 flex items-center justify-center gap-2">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                </svg>
+                Download CV
+              </a>
+          </div>
+      </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 bg-dark-bg">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16">
+              <h2 class="font-space font-bold text-3xl sm:text-4xl md:text-5xl mb-6">About <span class="text-cyan-accent">Me</span></h2>
+              <div class="w-20 h-1 bg-cyan-accent mx-auto rounded-full"></div>
+          </div>
+          
+          <div class="grid md:grid-cols-2 gap-12 items-center">
+              <div>
+                  <p class="text-lg text-gray-300 mb-6 leading-relaxed">
+                      I'm a passionate backend developer with 3+ years of experience in developing efficient and scalable APIs, specializing in Golang, Python, and Javascript.
+                  </p>
+                  <p class="text-lg text-gray-300 mb-8 leading-relaxed">
+                    I am a fast learner, eager to embrace new challenges and readily adapt to emerging technologies to drive project success. I believe in writing clean, maintainable code and following industry best practices to deliver exceptional software solutions.
+                  </p>
+                  <div class="flex flex-wrap gap-3">
+                      <span class="bg-dark-card px-4 py-2 rounded-full text-sm border border-dark-border hover:border-cyan-accent transition-colors duration-300">Problem Solver</span>
+                      <span class="bg-dark-card px-4 py-2 rounded-full text-sm border border-dark-border hover:border-cyan-accent transition-colors duration-300">Team Player</span>
+                      <span class="bg-dark-card px-4 py-2 rounded-full text-sm border border-dark-border hover:border-cyan-accent transition-colors duration-300">Continuous Learner</span>
+                  </div>
+              </div>
+              
+              <div class="grid grid-cols-2 sm:grid-cols-3 gap-6">
+                  <div class="bg-dark-card p-6 rounded-xl text-center border border-dark-border hover:border-cyan-accent transition-all duration-300 card-lift">
+                      <div class="text-cyan-accent text-2xl mb-2"><img src="https://cdn.iconscout.com/icon/free/png-256/free-python-logo-icon-svg-download-png-2945099.png?f=webp" width="30px" height="30px" class="block mx-auto"></div>
+                      <div class="font-semibold">Python</div>
+                  </div>
+                  <div class="bg-dark-card p-6 rounded-xl text-center border border-dark-border hover:border-cyan-accent transition-all duration-300 card-lift">
+                      <div class="text-cyan-accent text-2xl mb-2"><img src="https://icon.icepanel.io/Technology/svg/Go.svg" width="30px" height="30px" class="block mx-auto"></div>
+                      <div class="font-semibold">Go</div>
+                  </div>
+                  <div class="bg-dark-card p-6 rounded-xl text-center border border-dark-border hover:border-cyan-accent transition-all duration-300 card-lift">
+                      <div class="text-cyan-accent text-2xl mb-2"><img src="https://icon.icepanel.io/Technology/svg/Node.js.svg" width="30px" height="30px" class="block mx-auto"></div>
+                      <div class="font-semibold">Node.js</div>
+                  </div>
+                  <div class="bg-dark-card p-6 rounded-xl text-center border border-dark-border hover:border-cyan-accent transition-all duration-300 card-lift">
+                      <div class="text-cyan-accent text-2xl mb-2"><img src="https://icon.icepanel.io/Technology/svg/PostgresSQL.svg" width="30px" height="30px" class="block mx-auto"></div>
+                      <div class="font-semibold">PostgreSQL</div>
+                  </div>
+                  <div class="bg-dark-card p-6 rounded-xl text-center border border-dark-border hover:border-cyan-accent transition-all duration-300 card-lift">
+                    <div class="text-cyan-accent text-2xl mb-2"><img src="https://icon.icepanel.io/Technology/png-shadow-512/Linux.png" width="30px" height="30px" class="block mx-auto"></div>
+                      <div class="font-semibold">Linux</div>
+                  </div>
+                  <div class="bg-dark-card p-6 rounded-xl text-center border border-dark-border hover:border-cyan-accent transition-all duration-300 card-lift">
+                      <div class="text-cyan-accent text-2xl mb-2"><img src="https://icon.icepanel.io/Technology/svg/Git.svg" width="30px" height="30px" class="block mx-auto"></div>
+                      <div class="font-semibold">Git</div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-20 bg-gradient-to-b from-dark-bg to-dark-card/20">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16">
+              <h2 class="font-space font-bold text-3xl sm:text-4xl md:text-5xl mb-6">Featured <span class="text-cyan-accent">Projects</span></h2>
+              <div class="w-20 h-1 bg-cyan-accent mx-auto rounded-full"></div>
+          </div>
+          
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <!-- Project 1 -->
+              <div class="bg-dark-card rounded-xl border border-dark-border hover:border-cyan-accent transition-all duration-300 card-lift glow-hover overflow-hidden">
+                  <div class="h-48 bg-gradient-to-br from-cyan-accent/20 to-purple-accent/20 flex items-center justify-center">
+                      <div class="text-4xl">🚀</div>
+                  </div>
+                  <div class="p-6">
+                      <h3 class="font-space font-bold text-xl mb-3">Music Quizz</h3>
+                      <p class="text-gray-400 mb-4 text-sm leading-relaxed">Interactive cross-platform music quiz game where players guess songs in real time, developed using Flutter, Python, and Firebase with a clean, responsive UI and efficient backend architecture</p>
+                      <div class="flex flex-wrap gap-2 mb-4">
+                          <span class="bg-dark-bg px-3 py-1 rounded-full text-xs text-cyan-accent">Flutter</span>
+                          <span class="bg-dark-bg px-3 py-1 rounded-full text-xs text-cyan-accent">Python</span>
+                          <span class="bg-dark-bg px-3 py-1 rounded-full text-xs text-cyan-accent">Firebase</span>
+                          <span class="bg-dark-bg px-3 py-1 rounded-full text-xs text-cyan-accent">PostgreSQL</span>
+                      </div>
+                      <div class="flex gap-3">
+                          <a target="_blank" href="https://github.com/ganiyamustafa/kuswara-be" class="text-cyan-accent hover:text-cyan-accent/80 text-sm font-semibold">GitHub →</a>
+                      </div>
+                  </div>
+              </div>
+
+              <!-- Project 2 -->
+              <div class="bg-dark-card rounded-xl border border-dark-border hover:border-cyan-accent transition-all duration-300 card-lift glow-hover overflow-hidden">
+                <div class="h-48 bg-gradient-to-br from-cyan-accent/20 to-purple-accent/20 flex items-center justify-center">
+                    <div class="text-4xl">🚀</div>
+                </div>
+                <div class="p-6">
+                    <h3 class="font-space font-bold text-xl mb-3">Novel Scrapper</h3>
+                    <p class="text-gray-400 mb-4 text-sm leading-relaxed">Discord automation bot built with Python, leveraging AI-powered translation APIs and web scraping to fetch and translate novels in real time.</p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-dark-bg px-3 py-1 rounded-full text-xs text-cyan-accent">Python</span>
+                    </div>
+                    <div class="flex gap-3">
+                        <a target="_blank" href="https://github.com/ganiyamustafa/novel-translate-bot" class="text-cyan-accent hover:text-cyan-accent/80 text-sm font-semibold">GitHub →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="bg-dark-card rounded-xl border border-dark-border hover:border-cyan-accent transition-all duration-300 card-lift glow-hover overflow-hidden">
+              <div class="h-48 bg-gradient-to-br from-cyan-accent/20 to-purple-accent/20 flex items-center justify-center">
+                  <div class="text-4xl">🚀</div>
+              </div>
+              <div class="p-6">
+                  <h3 class="font-space font-bold text-xl mb-3">Trip Link (WIP)</h3>
+                  <p class="text-gray-400 mb-4 text-sm leading-relaxed">Comprehensive travel management app, offering trip planning, group coordination, document storage, trip journaling, and shared moments for travelers.</p>
+                  <div class="flex flex-wrap gap-2 mb-4">
+                      <span class="bg-dark-bg px-3 py-1 rounded-full text-xs text-cyan-accent">NodeJS</span>
+                      <span class="bg-dark-bg px-3 py-1 rounded-full text-xs text-cyan-accent">PostgreSQL</span>
+                      <span class="bg-dark-bg px-3 py-1 rounded-full text-xs text-cyan-accent">MongoDB</span>
+                      <span class="bg-dark-bg px-3 py-1 rounded-full text-xs text-cyan-accent">Flutter</span>
+                  </div>
+                  <!-- <div class="flex gap-3">
+                      <a href="#" class="text-cyan-accent hover:text-cyan-accent/80 text-sm font-semibold">GitHub →</a>
+                  </div> -->
+              </div>
+          </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="py-20 bg-dark-bg">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16">
+              <h2 class="font-space font-bold text-3xl sm:text-4xl md:text-5xl mb-6">Experience &amp; <span class="text-cyan-accent">Skills</span></h2>
+              <div class="w-20 h-1 bg-cyan-accent mx-auto rounded-full"></div>
+          </div>
+          
+          <div class="grid lg:grid-cols-2 gap-12">
+              <!-- Experience Column -->
+              <div>
+                  <h3 class="font-space font-bold text-2xl mb-8 text-cyan-accent">Professional Experience</h3>
+                  
+                  <div class="space-y-8">
+                      <div class="bg-dark-card p-6 rounded-xl border border-dark-border hover:border-cyan-accent transition-all duration-300">
+                          <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-3">
+                              <h4 class="font-semibold text-lg">Backend Web Developer</h4>
+                              <span class="text-cyan-accent text-sm font-medium">March 2023 - July 2024</span>
+                          </div>
+                          <p class="text-gray-400 mb-3 font-medium">Digital Laskar Pelangi (Orderfaz)</p>
+                          <ul class="text-gray-300 text-sm space-y-2">
+                              <li>• Contributed to the successful development and completion of a Facebook Ads Management project using Golang and PostgreSQL.</li>
+                              <li>• Assisted in database migration from PostgreSQL to MongoDB, improving scalability and data handling efficiency.</li>
+                              <li>• Contributed to the success of a marketplace platform by integrating multiple third-party APIs, including Banking, Marketplace, and Shipment APIs for enhanced functionality.</li>
+                          </ul>
+                      </div>
+                      
+                      <div class="bg-dark-card p-6 rounded-xl border border-dark-border hover:border-cyan-accent transition-all duration-300">
+                          <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-3">
+                              <h4 class="font-semibold text-lg">Junior Backend Developer</h4>
+                              <span class="text-cyan-accent text-sm font-medium">July 2021 — Nov 2022</span>
+                          </div>
+                          <p class="text-gray-400 mb-3 font-medium">Sampul Kreativ</p>
+                          <ul class="text-gray-300 text-sm space-y-2">
+                              <li>• Implemented a comprehensive membership subscription system for a health consultation application, driving significant increases in user engagement and revenue growth.</li>
+                              <li>• Collaborated effectively with cross-functional teams to deliver high-quality software solutions on schedule.</li>
+                              <li>• Resolved complex technical challenges, ensuring project success and enhancing client satisfaction.</li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+              
+              <!-- Skills Column -->
+              <div>
+                  <h3 class="font-space font-bold text-2xl mb-8 text-cyan-accent">Technical Skills</h3>
+                  
+                  <div class="space-y-6">
+                      <div>
+                          <h4 class="font-semibold text-lg mb-4">Programming Languages</h4>
+                          <div class="grid grid-cols-2 gap-3">
+                              <div class="bg-dark-card p-4 rounded-lg border border-dark-border hover:border-cyan-accent transition-all duration-300 text-center">
+                                  <div class="text-2xl mb-2"><img src="https://icon.icepanel.io/Technology/svg/Python.svg" width="30px" height="30px" class="block mx-auto"></div>
+                                  <div class="text-sm font-medium">Python</div>
+                              </div>
+                              <div class="bg-dark-card p-4 rounded-lg border border-dark-border hover:border-cyan-accent transition-all duration-300 text-center">
+                                  <div class="text-2xl mb-2"><img src="https://icon.icepanel.io/Technology/svg/Go.svg" width="30px" height="30px" class="block mx-auto"></div>
+                                  <div class="text-sm font-medium">Go</div>
+                              </div>
+                              <div class="bg-dark-card p-4 rounded-lg border border-dark-border hover:border-cyan-accent transition-all duration-300 text-center">
+                                  <div class="text-2xl mb-2"><img src="https://icon.icepanel.io/Technology/svg/JavaScript.svg" width="30px" height="30px" class="block mx-auto"></div>
+                                  <div class="text-sm font-medium">Javascript</div>
+                              </div>
+                              <div class="bg-dark-card p-4 rounded-lg border border-dark-border hover:border-cyan-accent transition-all duration-300 text-center">
+                                  <div class="text-2xl mb-2"><img src="https://icon.icepanel.io/Technology/svg/TypeScript.svg" width="30px" height="30px" class="block mx-auto"></div>
+                                  <div class="text-sm font-medium">Typescript</div>
+                            </div>
+                              <div class="bg-dark-card p-4 rounded-lg border border-dark-border hover:border-cyan-accent transition-all duration-300 text-center">
+                                  <div class="text-2xl mb-2"><img src="https://icon.icepanel.io/Technology/svg/Ruby.svg" width="30px" height="30px" class="block mx-auto"></div>
+                                  <div class="text-sm font-medium">Ruby</div>
+                              </div>
+                              <div class="bg-dark-card p-4 rounded-lg border border-dark-border hover:border-cyan-accent transition-all duration-300 text-center">
+                                  <div class="text-2xl mb-2"><img src="https://icon.icepanel.io/Technology/svg/Flutter.svg" width="30px" height="30px" class="block mx-auto"></div>
+                                  <div class="text-sm font-medium">Dart/Flutter</div>
+                              </div>
+                          </div>
+                      </div>
+                      
+                      <div>
+                          <h4 class="font-semibold text-lg mb-4">Databases &amp; Storage</h4>
+                          <div class="grid grid-cols-2 gap-3">
+                              <div class="bg-dark-card p-4 rounded-lg border border-dark-border hover:border-cyan-accent transition-all duration-300 text-center">
+                                  <div class="text-2xl mb-2"><img src="https://icon.icepanel.io/Technology/svg/PostgresSQL.svg" width="30px" height="30px" class="block mx-auto"></div>
+                                  <div class="text-sm font-medium">PostgreSQL</div>
+                              </div>
+                              <div class="bg-dark-card p-4 rounded-lg border border-dark-border hover:border-cyan-accent transition-all duration-300 text-center">
+                                  <div class="text-2xl mb-2"><img src="https://icon.icepanel.io/Technology/svg/MongoDB.svg" width="30px" height="30px" class="block mx-auto"></div>
+                                  <div class="text-sm font-medium">MongoDB</div>
+                              </div>
+                              <div class="bg-dark-card p-4 rounded-lg border border-dark-border hover:border-cyan-accent transition-all duration-300 text-center">
+                                  <div class="text-2xl mb-2"><img src="https://icon.icepanel.io/Technology/svg/Redis.svg" width="30px" height="30px" class="block mx-auto"></div>
+                                  <div class="text-sm font-medium">Redis</div>
+                              </div>
+                          </div>
+                      </div>
+                      
+                      <div>
+                          <h4 class="font-semibold text-lg mb-4">DevOps &amp; Cloud</h4>
+                          <div class="grid grid-cols-2 gap-3">
+                              <div class="bg-dark-card p-4 rounded-lg border border-dark-border hover:border-cyan-accent transition-all duration-300 text-center">
+                                  <div class="text-2xl mb-2"><img src="https://icon.icepanel.io/Technology/png-shadow-512/Linux.png" width="30px" height="30px" class="block mx-auto"></div>
+                                  <div class="text-sm font-medium">Linux</div>
+                              </div>
+                              <div class="bg-dark-card p-4 rounded-lg border border-dark-border hover:border-cyan-accent transition-all duration-300 text-center">
+                                <div class="text-2xl mb-2"><img src="https://icon.icepanel.io/Technology/svg/Docker.svg" width="30px" height="30px" class="block mx-auto"></div>
+                                <div class="text-sm font-medium">Docker</div>
+                              </div>
+                              <div class="bg-dark-card p-4 rounded-lg border border-dark-border hover:border-cyan-accent transition-all duration-300 text-center">
+                                  <div class="text-2xl mb-2"><img src="https://icon.icepanel.io/Technology/png-shadow-512/AWS.png" width="30px" height="30px" class="block mx-auto"></div>
+                                  <div class="text-sm font-medium">AWS</div>
+                              </div>
+                              <div class="bg-dark-card p-4 rounded-lg border border-dark-border hover:border-cyan-accent transition-all duration-300 text-center">
+                                <div class="text-2xl mb-2"><img src="https://icon.icepanel.io/Technology/svg/Git.svg" width="30px" height="30px" class="block mx-auto"></div>
+                                <div class="text-sm font-medium">Git</div>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-gradient-to-b from-dark-bg to-dark-card/20">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-16">
+              <h2 class="font-space font-bold text-3xl sm:text-4xl md:text-5xl mb-6">Get In <span class="text-cyan-accent">Touch</span></h2>
+              <div class="w-20 h-1 bg-cyan-accent mx-auto rounded-full mb-6"></div>
+              <p class="text-lg text-gray-400 max-w-2xl mx-auto">
+                  Ready to discuss your next project or explore collaboration opportunities? Let's build something amazing together.
+              </p>
+          </div>
+          
+          <div class="grid lg:grid-cols-3 gap-8">
+            <a href="mailto:ganiyamustaga32@gmail.com" class="flex items-center space-x-4 text-gray-300 hover:text-cyan-accent transition-colors duration-300">
+              <div class="w-12 h-12 bg-dark-card rounded-lg flex items-center justify-center border border-dark-border">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                </svg>
+              </div>
+              <div>
+                  <div class="font-semibold">Email</div>
+                  <div class="text-sm text-gray-400">@ganiyamustafa</div>
+              </div>
+            </a>
+            
+            <a href="https://github.com/ganiyamustafa" class="flex items-center space-x-4 text-gray-300 hover:text-cyan-accent transition-colors duration-300">
+                <div class="w-12 h-12 bg-dark-card rounded-lg flex items-center justify-center border border-dark-border">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z" clip-rule="evenodd"></path>
+                    </svg>
+                </div>
+                <div>
+                    <div class="font-semibold">GitHub</div>
+                    <div class="text-sm text-gray-400">@ganiyamustafa</div>
+                </div>
+            </a>
+            
+            <a href="https://linkedin.com/in/ganiya-mustafa" class="flex items-center space-x-4 text-gray-300 hover:text-cyan-accent transition-colors duration-300">
+                <div class="w-12 h-12 bg-dark-card rounded-lg flex items-center justify-center border border-dark-border">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clip-rule="evenodd"></path>
+                    </svg>
+                </div>
+                <div>
+                    <div class="font-semibold">LinkedIn</div>
+                    <div class="text-sm text-gray-400">@ganiyamustafa</div>
+                </div>
+            </a>
+        </div>
+      </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark-card/50 border-t border-dark-border py-8">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex flex-col md:flex-row justify-between items-center">
+              <div class="font-space font-bold text-xl text-cyan-accent mb-4 md:mb-0">Ganiya Mustafa</div>
+              <div class="text-gray-400 text-sm text-center md:text-right">
+                  <p>© 2025 Ganiya Mustafa. All rights reserved.</p>
+                  <p class="mt-1">Built with passion for clean code and scalable systems.</p>
+              </div>
+          </div>
+      </div>
+  </footer>
+
+  <script>
+      // Smooth scrolling for navigation links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+          anchor.addEventListener('click', function (e) {
+              e.preventDefault();
+              const target = document.querySelector(this.getAttribute('href'));
+              if (target) {
+                  target.scrollIntoView({
+                      behavior: 'smooth',
+                      block: 'start'
+                  });
+              }
+          });
+      });
+
+      // Add scroll effect to navigation
+      window.addEventListener('scroll', function() {
+          const nav = document.querySelector('nav');
+          if (window.scrollY > 100) {
+              nav.classList.add('bg-dark-bg/95');
+          } else {
+              nav.classList.remove('bg-dark-bg/95');
+          }
+      });
+  </script>
+
+</body></html>
